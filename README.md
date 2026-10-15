@@ -4,7 +4,8 @@
 
 - 在线地址：<https://bluixe.github.io/>
 - 仓库：<https://github.com/Bluixe/bluixe.github.io>
-- 当前内容为占位示例，尚未填写真实个人资料、论文或履历。
+- 已根据最新简历补充姓名、学术邮箱、研究简介、5 篇论文和 2 段教育经历；论文保留完整作者，并加粗 Wenhao Zhang。
+- 本次资料基准为 2026-10-15 的简历版本 `c4459dd`。简历源文件保存在本地忽略目录，不随主页发布。
 - 保留 Minimal Light 的双栏布局、论文展示和系统深浅色适配；样式和图片均保存在仓库内。
 
 ## 修改个人资料
@@ -16,15 +17,15 @@
 | 网页标题与搜索摘要 | `index.html` 的 `<title>` 和 description 元信息 |
 | 姓名、身份、单位、邮箱 | `index.html` 的「个人资料」注释下方 |
 | GitHub、Scholar、CV 链接 | `index.html` 的「个人链接」注释下方 |
-| 简介、研究方向、新闻 | `index.html` 中对应的小标题下方 |
+| 简介、研究方向、教育经历、新闻 | `index.html` 中对应的小标题下方 |
 | 论文标题、作者、发表信息和链接 | `index.html` 中的「论文列表」；复制一个 `<li>` 即可增加论文 |
-| 学术服务和联系信息 | `index.html` 中对应的小标题下方 |
+| 联系信息 | `index.html` 的 Contact 下方；有学术服务信息后可新增栏目 |
 | 头像 | 替换 `assets/img/avatar.svg`，或在 `index.html` 中改为自己的 JPG/PNG 路径 |
-| 论文配图 | 替换 `assets/img/paper-placeholder.svg`，或修改论文的图片路径 |
+| 论文展示 | 当前使用会议／期刊及年份标记；之后可按需要增加论文配图 |
 | 网站小图标 | `assets/img/favicon.svg` |
 | 自定义样式 | `assets/css/site.css` |
 
-Scholar 和 CV 尚未配置，因此目前显示为普通占位文字。添加资料后，将相应的 `<span>` 改为 `<a href="实际链接">…</a>`。CV PDF 可以放在 `assets/files/` 后链接到该文件。论文的 PDF、Code、Project 按钮同理，未添加真实链接前保持占位状态。
+个人链接目前提供 GitHub 和学术邮箱。添加 Scholar 主页或公开版 CV 后，可以在 `profile-links` 中增加链接；CV PDF 可以放在 `assets/files/`。论文条目已链接对应论文页面、PDF 和已核实的代码仓库。
 
 ## 本地预览
 

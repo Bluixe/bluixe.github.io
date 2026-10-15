@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 网页标题与摘要：填写真实姓名和单位后一起更新。 -->
-    <title>Your Name | Academic Homepage</title>
-    <meta name="description" content="Academic homepage for Your Name. Research interests, publications, and academic activities.">
+    <!-- 网页标题与摘要 -->
+    <title>Wenhao Zhang | Shanghai Jiao Tong University</title>
+    <meta name="description" content="Wenhao Zhang (张文浩), Ph.D. student at Shanghai Jiao Tong University. Research in reinforcement learning, zero-shot coordination, and human–AI collaboration.">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="https://bluixe.github.io/">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -17,44 +17,67 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="wrapper">
       <header class="profile">
-        <!-- 个人资料：替换头像、姓名、身份、单位和邮箱。 -->
+        <!-- 个人资料：姓名、身份、单位和邮箱。头像暂用姓名首字母。 -->
         <span class="image avatar">
-          <img src="assets/img/avatar.svg" width="144" height="144" alt="Profile photo placeholder">
+          <img src="assets/img/avatar.svg" width="144" height="144" alt="Wenhao Zhang monogram">
         </span>
-        <h1>Your Name</h1>
-        <p class="position">Your Position</p>
-        <p class="affiliation">Your University / Institution</p>
-        <p class="email">yourname (at) example.edu</p>
+        <h1>Wenhao Zhang</h1>
+        <p class="native-name" lang="zh-CN">张文浩</p>
+        <p class="position">Ph.D. Student</p>
+        <p class="affiliation">Shanghai Jiao Tong University</p>
+        <p class="email">wenhao_zhang (at) sjtu.edu.cn</p>
 
-        <!-- 个人链接：GitHub 已可使用；Scholar 和 CV 待填写真实链接。 -->
+        <!-- 个人链接：添加其他学术主页时，在这里增加链接。 -->
         <div class="profile-links" aria-label="Academic profiles">
           <a href="https://github.com/Bluixe">GitHub</a>
-          <span class="pending-link">Scholar <small>(soon)</small></span>
-          <span class="pending-link">CV <small>(soon)</small></span>
+          <a href="mailto:wenhao_zhang@sjtu.edu.cn">Email</a>
         </div>
 
         <nav class="section-nav" aria-label="Page sections">
           <a href="#about-me">About</a>
           <a href="#research-interests">Research</a>
+          <a href="#education">Education</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <main id="main-content" class="content">
-        <p class="page-note">Academic homepage <span aria-hidden="true">/</span> Profile coming soon</p>
+        <p class="page-note">Reinforcement Learning <span aria-hidden="true">/</span> Multi-Agent Systems</p>
 
         <!-- 个人简介 -->
         <h2 id="about-me">About Me</h2>
-        <p>I am [your position] at [your institution]. My research focuses on [your research area], with an interest in [your specific topics].</p>
-        <p>This page will share my research, publications, and academic activities. Personal information and research details will be added soon.</p>
+        <p>I am a Ph.D. student in Computer Science and Technology at Shanghai Jiao Tong University, advised by <a href="https://yingwen.io/en/">Ying Wen</a> and co-advised by Yang Li.</p>
+        <p>My research focuses on reinforcement learning and multi-agent systems: how agents adapt to new tasks and coordinate with unfamiliar partners. I work on in-context reinforcement learning, zero-shot coordination, and human–AI collaboration.</p>
 
         <!-- 研究方向：可按需要增删条目。 -->
         <h2 id="research-interests">Research Interests</h2>
         <ul>
-          <li><strong>[Research area 1]</strong> — a short description of your main research topic.</li>
-          <li><strong>[Research area 2]</strong> — a short description of another topic you work on.</li>
+          <li><strong>In-context reinforcement learning:</strong> test-time adaptation through interaction and context feedback.</li>
+          <li><strong>Zero-shot coordination and human–AI collaboration:</strong> cooperation with unfamiliar agents and people.</li>
+          <li><strong>Opponent modeling and offline reinforcement learning.</strong></li>
         </ul>
+
+        <!-- 教育经历：以最新简历为准，按时间倒序排列。 -->
+        <h2 id="education">Education</h2>
+        <div class="education">
+          <article class="education-entry">
+            <div class="education-heading">
+              <h3>Shanghai Jiao Tong University</h3>
+              <span class="education-dates">Sep. 2024 – Present</span>
+            </div>
+            <p class="degree">Ph.D. in Computer Science and Technology</p>
+            <p class="education-detail">Advisor: <a href="https://yingwen.io/en/">Ying Wen</a>; Co-advisor: Yang Li.</p>
+          </article>
+          <article class="education-entry">
+            <div class="education-heading">
+              <h3>Shanghai Jiao Tong University</h3>
+              <span class="education-dates">Sep. 2020 – Jun. 2024</span>
+            </div>
+            <p class="degree">Bachelor’s degree in Artificial Intelligence<br><span lang="zh-CN">卓越人才试点班</span> (Excellence Pilot Class)</p>
+            <p class="education-detail">Top 10% in core-course ranking; Outstanding Graduate.</p>
+          </article>
+        </div>
 
         <!-- 新闻：按时间倒序添加真实消息。 -->
         <h2 id="news">News</h2>
@@ -62,43 +85,83 @@
           <li><time datetime="2026-10">Oct. 2026</time> This academic homepage is online.</li>
         </ul>
 
-        <!-- 论文列表：以下均为占位示例，不代表真实论文。复制 li 可增加条目。 -->
-        <h2 id="publications">Selected Publications</h2>
-        <p class="section-note">Placeholder entries — publication details will be added soon.</p>
+        <!-- 论文列表：保留完整作者顺序，个人姓名加粗；按年份倒序排列。 -->
+        <h2 id="publications">Publications</h2>
         <div class="publications">
           <ol class="bibliography">
-            <li>
+            <li id="cv-icrl">
               <div class="pub-row">
-                <div class="col-sm-3 abbr publication-image">
-                  <img src="assets/img/paper-placeholder.svg" class="teaser" width="320" height="200" alt="Placeholder for a research paper figure">
-                </div>
+                <div class="publication-venue"><span>NeurIPS</span><span class="venue-year">2026</span></div>
                 <div class="col-sm-9 publication-details">
-                  <div class="title">[Paper title 1]</div>
-                  <div class="author"><strong>Your Name</strong>, [Coauthors]</div>
-                  <div class="periodical"><em>[Venue or preprint], [Year]</em></div>
-                  <p class="paper-summary">A short description of the research question, approach, and main contribution.</p>
-                  <div class="links" aria-label="Paper 1 links pending">
-                    <!-- 有真实链接后，把 span 改为 a，并添加 href。 -->
-                    <span class="pending-button">PDF</span>
-                    <span class="pending-button">Code</span>
-                    <span class="pending-button">Project</span>
+                  <div class="title"><a href="https://arxiv.org/abs/2509.23209">Context Value Informed In-Context Reinforcement Learning</a></div>
+                  <div class="author"><strong>Wenhao Zhang</strong>, Shao Zhang, Xihuai Wang, Yang Li, Ying Wen.</div>
+                  <div class="periodical"><em>Neural Information Processing Systems (NeurIPS), 2026.</em></div>
+                  <p class="paper-summary">Context value feedback for more stable in-context reinforcement learning and test-time adaptation.</p>
+                  <div class="links" aria-label="CV-ICRL resources">
+                    <a href="https://arxiv.org/abs/2509.23209">Paper</a>
+                    <a href="https://arxiv.org/pdf/2509.23209">PDF</a>
+                    <a href="https://github.com/Bluixe/CV-ICRL">Code</a>
                   </div>
                 </div>
               </div>
             </li>
-            <li>
+            <li id="dpt-agent">
               <div class="pub-row">
-                <div class="col-sm-3 abbr publication-image">
-                  <img src="assets/img/paper-placeholder.svg" class="teaser" width="320" height="200" alt="Placeholder for a research paper figure" loading="lazy">
-                </div>
+                <div class="publication-venue"><span>ACL</span><span class="venue-year">2025</span></div>
                 <div class="col-sm-9 publication-details">
-                  <div class="title">[Paper title 2]</div>
-                  <div class="author">[Coauthors], <strong>Your Name</strong></div>
-                  <div class="periodical"><em>[Venue or preprint], [Year]</em></div>
-                  <p class="paper-summary">A short description of another research project and its contribution.</p>
-                  <div class="links" aria-label="Paper 2 links pending">
-                    <span class="pending-button">PDF</span>
-                    <span class="pending-button">Code</span>
+                  <div class="title"><a href="https://aclanthology.org/2025.acl-long.206/">Leveraging Dual Process Theory in Language Agent Framework for Real-time Simultaneous Human-AI Collaboration</a></div>
+                  <div class="author">Shao Zhang, Xihuai Wang, <strong>Wenhao Zhang</strong>, Chaoran Li, Junru Song, Tingyu Li, Lin Qiu, Xuezhi Cao, Xunliang Cai, Wen Yao, Weinan Zhang, Xinbing Wang, Ying Wen.</div>
+                  <div class="periodical"><em>Association for Computational Linguistics (ACL), 2025.</em></div>
+                  <p class="paper-summary">A dual-process language agent for real-time collaboration with human partners.</p>
+                  <div class="links" aria-label="DPT-Agent resources">
+                    <a href="https://aclanthology.org/2025.acl-long.206/">Paper</a>
+                    <a href="https://aclanthology.org/2025.acl-long.206.pdf">PDF</a>
+                    <a href="https://github.com/sjtu-marl/DPT-Agent">Code</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="individual-collective-objectives">
+              <div class="pub-row">
+                <div class="publication-venue"><span>NeurIPS</span><span class="venue-year">2024</span></div>
+                <div class="col-sm-9 publication-details">
+                  <div class="title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4ee3ac2cd119023c79b0d21c4a464dc7-Abstract-Conference.html">Aligning Individual and Collective Objectives in Multi-Agent Cooperation</a></div>
+                  <div class="author">Yang Li, <strong>Wenhao Zhang</strong>, Jianhong Wang, Shao Zhang, Yali Du, Ying Wen, Wei Pan.</div>
+                  <div class="periodical"><em>Neural Information Processing Systems (NeurIPS), 2024.</em></div>
+                  <p class="paper-summary">Agent objective alignment in multi-agent cooperation with mixed individual and collective goals.</p>
+                  <div class="links" aria-label="Individual and collective objectives resources">
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4ee3ac2cd119023c79b0d21c4a464dc7-Abstract-Conference.html">Paper</a>
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/4ee3ac2cd119023c79b0d21c4a464dc7-Paper-Conference.pdf">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="zsc-eval">
+              <div class="pub-row">
+                <div class="publication-venue"><span>NeurIPS</span><span class="venue-year">2024</span></div>
+                <div class="col-sm-9 publication-details">
+                  <div class="title"><a href="https://papers.nips.cc/paper/2024/hash/54a7139c548c88e288aa0fcd2bcbeceb-Abstract-Datasets_and_Benchmarks_Track.html">ZSC-Eval: An Evaluation Toolkit and Benchmark for Multi-agent Zero-shot Coordination</a></div>
+                  <div class="author">Xihuai Wang, Shao Zhang, <strong>Wenhao Zhang</strong>, Wentao Dong, Jingxiao Chen, Ying Wen, Weinan Zhang.</div>
+                  <div class="periodical"><em>NeurIPS Datasets and Benchmarks Track, 2024.</em></div>
+                  <p class="paper-summary">An evaluation toolkit and benchmark for coordination with unfamiliar partners.</p>
+                  <div class="links" aria-label="ZSC-Eval resources">
+                    <a href="https://papers.nips.cc/paper/2024/hash/54a7139c548c88e288aa0fcd2bcbeceb-Abstract-Datasets_and_Benchmarks_Track.html">Paper</a>
+                    <a href="https://papers.nips.cc/paper_files/paper/2024/file/54a7139c548c88e288aa0fcd2bcbeceb-Paper-Datasets_and_Benchmarks_Track.pdf">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="cooperative-incompatibility">
+              <div class="pub-row">
+                <div class="publication-venue"><span>JAIR</span><span class="venue-year">2024</span></div>
+                <div class="col-sm-9 publication-details">
+                  <div class="title"><a href="https://doi.org/10.1613/jair.1.15884">Tackling Cooperative Incompatibility for Zero-Shot Human-AI Coordination</a></div>
+                  <div class="author">Yang Li, Shao Zhang, Jichen Sun, <strong>Wenhao Zhang</strong>, Yali Du, Ying Wen, Xinbing Wang, Wei Pan.</div>
+                  <div class="periodical"><em>Journal of Artificial Intelligence Research (JAIR), 2024.</em></div>
+                  <p class="paper-summary">Cooperative open-ended learning for coordination with unfamiliar AI and human partners.</p>
+                  <div class="links" aria-label="Cooperative incompatibility resources">
+                    <a href="https://doi.org/10.1613/jair.1.15884">Paper</a>
+                    <a href="https://arxiv.org/pdf/2306.03034">PDF</a>
                   </div>
                 </div>
               </div>
@@ -106,13 +169,9 @@
           </ol>
         </div>
 
-        <!-- 学术服务：填写审稿、会议组织等真实经历。 -->
-        <h2 id="services">Academic Service</h2>
-        <p>Academic service and professional activities will be listed here.</p>
-
-        <!-- 联系方式：真实邮箱可改成 mailto 链接。 -->
+        <!-- 联系方式 -->
         <h2 id="contact">Contact</h2>
-        <p>Email: <span class="email">yourname (at) example.edu</span><br>Affiliation: [Department], [Institution]</p>
+        <p>Email: <a class="email" href="mailto:wenhao_zhang@sjtu.edu.cn">wenhao_zhang@sjtu.edu.cn</a><br>Shanghai Jiao Tong University, Shanghai, China.</p>
 
         <div class="site-credit">
           Built with the <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a> theme.

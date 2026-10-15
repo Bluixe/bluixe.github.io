@@ -6,6 +6,7 @@ body { font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; }
 .profile .avatar { display: block; }
 .profile .avatar img { box-sizing: content-box; width: 124px; height: 124px; padding: 0; margin: 0 0 24px; }
 .profile h1 { margin-bottom: 12px; }
+.profile .native-name { margin: -4px 0 14px; font-size: 17px; letter-spacing: .12em; }
 .profile .position { margin-bottom: 6px; font-size: 1.1rem; }
 .profile .affiliation { margin-bottom: 10px; }
 .email { font-family: Consolas, "Liberation Mono", monospace; font-size: 13px; overflow-wrap: anywhere; }
@@ -28,17 +29,27 @@ body { font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; }
 .publications { margin-top: 0; }
 .publications ol.bibliography li { margin-bottom: 26px; }
 .publications .pub-row { align-items: flex-start; gap: 20px; }
+.publication-venue { box-sizing: border-box; display: flex; flex: 0 0 94px; flex-direction: column; align-items: center; padding: 12px 6px; margin-top: 3px; border: 1px solid #dce5ec; border-radius: 4px; color: #043361; background: #f4f7fa; font: 600 13px/1.5 Arial, sans-serif; }
+.venue-year { font-weight: 400; font-size: 12px; color: #667888; }
 .publications .publication-image { width: 160px; flex: 0 0 160px; padding: 0; }
 .publications ol.bibliography li .abbr { height: auto; margin: 0; }
 .publications ol.bibliography li .teaser { display: block; width: 160px; height: 100px; margin: 4px 0 0; border-radius: 5px; box-shadow: none; object-fit: cover; }
 .publications .publication-details { flex: 1; min-width: 0; padding: 0; }
 .publications .title { color: #043361; font-size: 16px; line-height: 1.4; margin-bottom: 3px; }
+.publications .title a { color: inherit; }
+.publications .title a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .publications .author, .publications .periodical { font-size: 14px; line-height: 1.5; }
 .publications .paper-summary { font-size: 13px; margin: 6px 0 8px; }
 .publications .links { display: flex; flex-wrap: wrap; gap: 6px; }
 .pending-button { display: inline-block; border: 1px solid #ccc; border-radius: 3px; padding: 1px 7px; font: 11px/1.6 Arial, sans-serif; color: #757575; }
 .publications .links a { display: inline-block; border: 1px solid currentColor; border-radius: 3px; padding: 1px 7px; font: 11px/1.6 Arial, sans-serif; }
 .site-credit { margin-top: 42px; padding-top: 16px; border-top: 1px solid #e8e8e8; color: #707070; font-size: 11px; line-height: 1.7; }
+.education-entry { margin-bottom: 20px; }
+.education-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; column-gap: 12px; row-gap: 5px; margin-bottom: 5px; }
+.education-heading h3 { font-size: 16px; font-weight: 600; margin: 0; }
+.education-dates { font-size: 13px; white-space: nowrap; color: #707070; }
+.education .degree { font-size: 14px; margin: 0 0 4px; }
+.education .education-detail { font-size: 13px; margin: 0; }
 a:focus-visible { outline: 2px solid #39c; outline-offset: 4px; border-radius: 2px; }
 .skip-link { position: absolute; left: 12px; top: -60px; padding: 8px 12px; background: #fff; z-index: 10; }
 .skip-link:focus { top: 12px; }
@@ -48,6 +59,8 @@ a:focus-visible { outline: 2px solid #39c; outline-offset: 4px; border-radius: 2
   .news-list time, .publications .title { color: #3eb7f0; }
   .pending-button { color: #b0b3bc; border-color: #626673; }
   .site-credit { border-color: #424550; }
+  .publication-venue { background: #292c38; border-color: #424550; color: #3eb7f0; }
+  .venue-year, .education-dates { color: #a4a7af; }
   .skip-link { background: #20212b; }
 }
 
@@ -64,6 +77,7 @@ a:focus-visible { outline: 2px solid #39c; outline-offset: 4px; border-radius: 2
   body { padding: 24px 20px; }
   .profile .avatar img { width: 108px; height: 108px; }
   .publications .pub-row { display: block; }
+  .publication-venue { display: inline-flex; flex-direction: row; gap: 7px; margin: 0 0 9px; padding: 3px 9px; }
   .publications .publication-image { width: 100%; margin-bottom: 12px; }
   .publications ol.bibliography li .teaser { width: 160px; height: 100px; }
   .publications ol.bibliography li { margin-bottom: 30px; }

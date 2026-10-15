@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144" role="img" aria-label="Profile photo placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144" role="img" aria-label="Wenhao Zhang monogram">
   <circle cx="72" cy="72" r="72" fill="#edf2f6"/>
-  <circle cx="72" cy="54" r="22" fill="#a9bacb"/>
-  <path d="M29 126c2-27 17-42 43-42s41 15 43 42" fill="#a9bacb"/>
+  <text x="72" y="90" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#043361">WZ</text>
 </svg>
