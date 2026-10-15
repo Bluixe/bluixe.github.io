@@ -1,0 +1,81 @@
+/* Local refinements for the official Minimal Light HTML template. */
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body { font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; }
+.wrapper { display: flow-root; }
+.content { float: right; width: 650px; padding-top: 4em; padding-bottom: 48px; }
+.profile .avatar { display: block; }
+.profile .avatar img { box-sizing: content-box; width: 124px; height: 124px; padding: 0; margin: 0 0 24px; }
+.profile h1 { margin-bottom: 12px; }
+.profile .position { margin-bottom: 6px; font-size: 1.1rem; }
+.profile .affiliation { margin-bottom: 10px; }
+.email { font-family: Consolas, "Liberation Mono", monospace; font-size: 13px; overflow-wrap: anywhere; }
+.profile .email { margin-bottom: 22px; }
+.profile-links { display: flex; justify-content: center; align-items: baseline; flex-wrap: wrap; gap: 14px; font-size: 14px; }
+.pending-link { color: #707070; }
+.pending-link small { font-size: 10px; }
+.section-nav { margin-top: 28px; font-size: 13px; line-height: 2; }
+.section-nav a { display: inline-block; margin: 0 5px; }
+.page-note { font-family: Arial, sans-serif; font-size: 11px; color: #707070; letter-spacing: .04em; margin-bottom: 22px; }
+.page-note span { padding: 0 6px; color: #aaa; }
+.content h2 { margin-top: 30px; margin-bottom: 14px; }
+.content h2:first-of-type { margin-top: 0; }
+.content p { line-height: 1.65; }
+.content ul { padding-left: 22px; }
+.content li { margin-bottom: 7px; }
+.news-list { padding-left: 0 !important; list-style: none; }
+.news-list time { display: inline-block; min-width: 86px; color: #043361; font-weight: 500; }
+.section-note { font-size: 13px; color: #707070; margin-bottom: 18px; }
+.publications { margin-top: 0; }
+.publications ol.bibliography li { margin-bottom: 26px; }
+.publications .pub-row { align-items: flex-start; gap: 20px; }
+.publications .publication-image { width: 160px; flex: 0 0 160px; padding: 0; }
+.publications ol.bibliography li .abbr { height: auto; margin: 0; }
+.publications ol.bibliography li .teaser { display: block; width: 160px; height: 100px; margin: 4px 0 0; border-radius: 5px; box-shadow: none; object-fit: cover; }
+.publications .publication-details { flex: 1; min-width: 0; padding: 0; }
+.publications .title { color: #043361; font-size: 16px; line-height: 1.4; margin-bottom: 3px; }
+.publications .author, .publications .periodical { font-size: 14px; line-height: 1.5; }
+.publications .paper-summary { font-size: 13px; margin: 6px 0 8px; }
+.publications .links { display: flex; flex-wrap: wrap; gap: 6px; }
+.pending-button { display: inline-block; border: 1px solid #ccc; border-radius: 3px; padding: 1px 7px; font: 11px/1.6 Arial, sans-serif; color: #757575; }
+.publications .links a { display: inline-block; border: 1px solid currentColor; border-radius: 3px; padding: 1px 7px; font: 11px/1.6 Arial, sans-serif; }
+.site-credit { margin-top: 42px; padding-top: 16px; border-top: 1px solid #e8e8e8; color: #707070; font-size: 11px; line-height: 1.7; }
+a:focus-visible { outline: 2px solid #39c; outline-offset: 4px; border-radius: 2px; }
+.skip-link { position: absolute; left: 12px; top: -60px; padding: 8px 12px; background: #fff; z-index: 10; }
+.skip-link:focus { top: 12px; }
+
+@media (prefers-color-scheme: dark) {
+  .pending-link, .page-note, .section-note, .site-credit { color: #a4a7af; }
+  .news-list time, .publications .title { color: #3eb7f0; }
+  .pending-button { color: #b0b3bc; border-color: #626673; }
+  .site-credit { border-color: #424550; }
+  .skip-link { background: #20212b; }
+}
+
+@media screen and (max-width: 960px) {
+  body { padding: 28px 24px; }
+  .wrapper { max-width: 680px; margin: 0 auto !important; }
+  .profile { width: auto; float: none; position: static; padding: 0 0 28px; }
+  .profile .avatar img { margin-bottom: 18px; }
+  .section-nav { margin-top: 18px; }
+  .content { width: auto; float: none; padding-top: 28px; border-top: 1px solid #e8e8e8; }
+}
+
+@media screen and (max-width: 480px) {
+  body { padding: 24px 20px; }
+  .profile .avatar img { width: 108px; height: 108px; }
+  .publications .pub-row { display: block; }
+  .publications .publication-image { width: 100%; margin-bottom: 12px; }
+  .publications ol.bibliography li .teaser { width: 160px; height: 100px; }
+  .publications ol.bibliography li { margin-bottom: 30px; }
+  .content h2 { font-size: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  .profile { position: static; }
+  .content { width: auto; float: none; padding-top: 24px; }
+  .section-nav, .skip-link { display: none; }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-label="Paper figure placeholder">
+  <rect width="320" height="200" rx="10" fill="#eef3f7"/>
+  <rect x="101" y="31" width="118" height="103" rx="7" fill="#fff" stroke="#c1d0dd" stroke-width="2"/>
+  <path d="M123 57h74M123 73h74M123 89h49" fill="none" stroke="#afc1d1" stroke-width="5" stroke-linecap="round"/>
+  <text x="160" y="167" text-anchor="middle" fill="#62788d" font-family="Arial, sans-serif" font-size="16">Figure placeholder</text>
+</svg>
