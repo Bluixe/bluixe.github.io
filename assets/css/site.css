@@ -39,6 +39,7 @@ body { font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; }
 .publications .title a { color: inherit; }
 .publications .title a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .publications .author, .publications .periodical { font-size: 14px; line-height: 1.5; }
+.publications .author strong { font-weight: 700; }
 .publications .paper-summary { font-size: 13px; margin: 6px 0 8px; }
 .publications .links { display: flex; flex-wrap: wrap; gap: 6px; }
 .pending-button { display: inline-block; border: 1px solid #ccc; border-radius: 3px; padding: 1px 7px; font: 11px/1.6 Arial, sans-serif; color: #757575; }
